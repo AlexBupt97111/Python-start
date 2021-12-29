@@ -1,0 +1,11 @@
+def PerorSq(a,b,type):
+    if type == "P":
+         print(f"Perimeter is equal {round(2*(a+b),2)} meters")
+    else:
+        print(f"Area is equal {round(a*b,2)} square metres")
+ 
+type = input("Enter the result type -  P (Perimeter) | A (Area):")      
+a = float(input("Enter first parameter (with point, if float number): "))
+b = float(input("Enter second parameter (with point, if float number: "))
+
+PerorSq(a,b,type)
