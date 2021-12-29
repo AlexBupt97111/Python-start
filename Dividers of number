@@ -1,0 +1,5 @@
+N = int(input("Input number:"))
+a = [x for x in range(1, N+1)]#create list of all numbers
+a = filter(lambda x: not  N%x , a)#create filter - object and sort by lambda function
+a = list(a)#convert fiter - object to list
+print(*a)
