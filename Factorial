@@ -1,0 +1,7 @@
+def f(n):  
+    if n == 1 or n == 2:  
+        return n  
+    else:  
+        return n*f(n-1) #counter 
+
+print (f(4)) # 1*2*3*4
