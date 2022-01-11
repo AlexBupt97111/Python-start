@@ -9,3 +9,10 @@ def F(n):
 print(F(8))
 
 
+#With certain area
+
+def fib(a,b):
+	while b <= 100:
+		a,b=b,b+a # Fib formula
+		print(a)	
+fib(0,1)
