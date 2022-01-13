@@ -1,0 +1,22 @@
+import time #to use module time (call him)
+
+def getGCD(a,b):#function(fn)
+    while a!=b:
+        if a>b: a-=b
+        else: b-=a
+    return a
+
+def testTime(fn): #fn - link to function
+    def wrapper(*args): #write a wrapper (announced it)
+        st = time.time() 
+        fn(*args)#call function
+        dt = time.time() - st
+        print(f"Час виконання: {dt} сек")
+    return wrapper #return  - help turn to the wrapper and call it
+    
+
+test1 = testTime(getGCD)#assigh to test1 value of testTime +argument/link(getGCD 
+test1(100000, 2)#call  wrapper and give arguments (*args)
+
+#function testTime - decoratore            
+# wrapper -  expands functionally  of function fn(by checking time )
