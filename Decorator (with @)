@@ -1,0 +1,28 @@
+import time 
+
+def testTime(fn): #automatically give link on functions 
+    def wrapper(*args, **kwargs): 
+        st = time.time() 
+        res = fn(*args, **kwargs)
+        dt = time.time() - st
+        print(f"Час виконання: {dt} сек")
+        return res
+    return wrapper 
+
+@testTime #wrappe in decorator (if decorator - first, functions  - after him)
+def getGCD(a,b):
+    while a!=b:
+        if a>b: a-=b
+        else: b-=a
+    return a
+@testTime
+def getFastGCD(a,b):
+    if a<b:a,b = b,a
+    while b: a,b = b, a%b
+    return a
+    
+
+res = getGCD (100000, 2)#both
+res2 = getFastGCD (100000, 2)#both
+print(res)
+print(res2)
