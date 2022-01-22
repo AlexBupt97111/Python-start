@@ -1,0 +1,10 @@
+a = "А роза упала на лапу Азора"
+a = a.replace(' ', '')
+a = a.lower()
+a = list(a)
+b = a[::-1]#go from right to left (also can use 1)
+if a == b:
+    print('Palindrome')
+else:
+    print('Not palindrome or check your keyboard language ')
+ 
