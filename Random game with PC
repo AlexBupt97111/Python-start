@@ -1,0 +1,10 @@
+import random
+a = random.choice((range(4)))
+b = int(input('Enter int number [1,2,3]: '))
+if a > b:
+    print('Win computer')
+elif b > a:
+    print('Win human')
+else:
+    print('Played a draw')
+    
