@@ -1,0 +1,3 @@
+a = 'fg@gmail.com'
+s = a.partition('@')# on parts
+print(f'User name is {s[0]}, domain - {s[2]}')
