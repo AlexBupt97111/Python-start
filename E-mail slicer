@@ -1,3 +1,37 @@
 a = 'fg@gmail.com'
 s = a.partition('@')# on parts
 print(f'User name is {s[0]}, domain - {s[2]}')
+
+
+
+#a = 'mikky45@hitmail.com', 'mat54@gmail.com', '@Mary_35'
+#b = a[0]
+#print(b)
+#if a[0] == '@':
+#    print('_')
+#elif a[2] == 's':
+#    print('b')
+#else:
+#    print('try')
+
+
+#a = 'mikky45@hitmail.com', 'mat54@gmail.com', '@Mary_35'
+#for el in a:
+#    print(el)
+
+
+#a = 'mikky45@hitmail.com' 
+#b = a[a.index('@'):]
+#print(b)
+
+a = '@term'
+for el in a:
+    if el =='@':
+        print(f'Telegram nick is {el}')
+    else:
+        print(str(el))
+
+email = input("Enter Your Email: ").strip()
+username = email[:email.index('@')]
+domain = email[email.index('@') + 1:]
+print(f"Your username is {username} & domain is {domain}")
