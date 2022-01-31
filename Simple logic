@@ -1,0 +1,7 @@
+a = True
+b = False
+c = True
+if a and b or c: #if a == b; with check levels - not find on level and - to level or (a == c )
+    print('Ok')
+else:
+    print("None")
