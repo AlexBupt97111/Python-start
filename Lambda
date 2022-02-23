@@ -1,0 +1,7 @@
+def showElements(lst,func):#func - to call additional function,which check condition(even or odd number)
+    for x in lst:
+        if func(x):#condition; func  - synonym of _odd
+            print(x)
+            
+a = [1,2,3,4,5,6,7]
+showElements(a, lambda x:True if x%2==0 else False)
