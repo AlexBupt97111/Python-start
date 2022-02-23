@@ -1,0 +1,6 @@
+str1 = 'abcdd'
+str2 = 'dcdba'
+if set(str1) == set(str2) and len(str1) == len(str2):
+    print("анаграма")
+else:
+    print("не анаграма - різні символи або довжина виразів")
