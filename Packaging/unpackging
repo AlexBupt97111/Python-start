@@ -1,0 +1,8 @@
+a = [-5,6]
+for x in range (*a):#unpackage
+    print(x, end = " ")# as string (end = " ")
+
+#Note:
+    #1) Packaging: *y,x = 1,2,3 === y = 1,2 , x =3
+    
+    #2) Unpackaging: range(*[-5,6]) === from -5 to 5 
