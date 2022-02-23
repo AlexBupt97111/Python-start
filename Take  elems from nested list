@@ -8,3 +8,16 @@ for i in a:
     elif isinstance(i,tuple):
         for t in i:
             print(t)
+
+#  add dict  {"p":234}
+#elif isinstance(i, dict):
+        #for k in i:
+            #for v in i.values():
+                    #print(k,v)
+                    
+# add dict2   {"p":[234,567]} ]
+#elif isinstance(i, dict):
+        #for k in i:
+            #for v in i.values():
+                #for c in v:
+                    #print(k.upper(),c)
